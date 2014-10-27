@@ -2,7 +2,8 @@
     "builders": [{
         "type": "virtualbox-iso",
         "iso_url": "boot2docker-vagrant.iso",
-        "iso_checksum_type": "none",
+        "iso_checksum": "4d5287d8fd49f1b89c8712822f2fdf66",
+        "iso_checksum_type": "md5",
         "boot_wait": "5s",
         "guest_additions_mode": "attach",
         "guest_os_type": "Linux_64",
@@ -12,7 +13,8 @@
     }, {
         "type": "vmware-iso",
         "iso_url": "boot2docker-vagrant.iso",
-        "iso_checksum_type": "none",
+        "iso_checksum": "4d5287d8fd49f1b89c8712822f2fdf66",
+        "iso_checksum_type": "md5",
         "boot_wait": "5s",
         "guest_os_type": "other3xlinux-64",
         "ssh_username": "docker",
@@ -21,9 +23,11 @@
     }, {
         "type": "parallels-iso",
         "iso_url": "boot2docker-vagrant.iso",
-        "iso_checksum_type": "none",
+        "iso_checksum": "4d5287d8fd49f1b89c8712822f2fdf66",
+        "iso_checksum_type": "md5",
+        "parallels_tools_flavor": "lin",
         "boot_wait": "5s",
-        "guest_os_distribution": "linux",
+        "guest_os_type": "linux",
         "ssh_username": "docker",
         "ssh_password": "tcuser",
         "shutdown_command": "sudo poweroff"
